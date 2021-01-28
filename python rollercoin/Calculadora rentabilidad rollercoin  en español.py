@@ -3,7 +3,7 @@ import urllib.request
 
 current_hashrate = float(input("introduce tu hashrate (TH/s): "))
 
-network_powers = [float(input("BTC network power (EH/s): ")), float(input("DOGE network power (EH/s): ")), float(input("ETH network power (EH/s): "))]
+network_powers = [float(input("introduce BTC network power (EH/s): ")), float(input("introduce DOGE network power (EH/s): ")), float(input("introduce ETH network power (EH/s): "))]
 rewards = [0.00009, 240, 0.0017]
 names = ["BTC", "DOGE", "ETH"]
 
@@ -21,5 +21,5 @@ for i, (network_power, reward, price) in enumerate(zip(network_powers, rewards, 
 
 max_index = earnings.index(max(earnings))
 
-print("\n---------------------------\n\n{} es el mas rentable\n{}$ per block\n".format(names[max_index], earnings[max_index]))
+print("\n---------------------------\n\n{} es el mas rentable\n{}$ por bloque minado\n".format(names[max_index], earnings[max_index]))
 input("Presiona enter para cerrar")
